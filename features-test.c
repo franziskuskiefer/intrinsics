@@ -36,5 +36,23 @@ int main() {
   Lib_IntVector_Intrinsics_vec128 r10 =
       Lib_IntVector_Intrinsics_vec128_interleave_high64(a, b);
   Lib_IntVector_Intrinsics_vec128_store_le(&a, b);
+
+  Lib_IntVector_Intrinsics_vec128 r11 =
+      Lib_IntVector_Intrinsics_vec128_mul64(a, b);
+  Lib_IntVector_Intrinsics_vec128 r12 =
+      Lib_IntVector_Intrinsics_vec128_add64(a, b);
+  Lib_IntVector_Intrinsics_vec128 r13 =
+      Lib_IntVector_Intrinsics_vec128_shift_right64(a, (uint32_t)26);
+  Lib_IntVector_Intrinsics_vec128 r14 =
+      Lib_IntVector_Intrinsics_vec128_load64((uint64_t)0x3ffffff);
+  Lib_IntVector_Intrinsics_vec128 r15 =
+      Lib_IntVector_Intrinsics_vec128_smul64(a, (uint64_t)5);
+  Lib_IntVector_Intrinsics_vec128 r16 =
+      Lib_IntVector_Intrinsics_vec128_shift_left64(a, 5);
+  Lib_IntVector_Intrinsics_vec128 r17 =
+      Lib_IntVector_Intrinsics_vec128_or(a, b);
+  Lib_IntVector_Intrinsics_vec128 r18 =
+      Lib_IntVector_Intrinsics_vec128_and(a, b);
+
   return 0;
 }
